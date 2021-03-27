@@ -23,14 +23,10 @@ public class Main extends Application {
         window = primaryStage;
         window.setTitle("Chevron Chemical Management");
 
-/*        FXMLLoader tankSettingsLoader = new FXMLLoader(getClass().getResource("tankSettings.fxml"));
-        tankSettings = new Parent(tankSettingsLoader.load());*/
         tankSettings = FXMLLoader.load(getClass().getResource("tankSettings.fxml"));
         notifications = FXMLLoader.load(getClass().getResource("notificationsSettings.fxml"));
         trendGraph = FXMLLoader.load(getClass().getResource("trendGraph.fxml"));
         tankStatus = FXMLLoader.load(getClass().getResource("tankStatus.fxml"));
-        //FXMLLoader notificationsSettingsLoader = new FXMLLoader(getClass().getResource("notificationsSettings.fxml"));
-/*        notifications = new Parent(notificationsSettingsLoader.load());*/
 
         Scene startingScene = new Scene(tankSettings);
 
@@ -43,14 +39,13 @@ public class Main extends Application {
         launch(args);
     }
 
+    public static void tankSettingsScene() { swapScenes(tankSettings);}
     public static void notificationScene() {
         swapScenes(notifications);
     }
-
     public static void tankStatusScene() {
         swapScenes(tankStatus);
     }
-
     public static void trendGraphScene() {
         swapScenes(trendGraph);
     }

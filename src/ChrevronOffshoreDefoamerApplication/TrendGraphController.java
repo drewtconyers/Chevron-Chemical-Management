@@ -2,16 +2,16 @@ package ChrevronOffshoreDefoamerApplication;
 
 import javafx.scene.input.MouseEvent;
 
-public class TankStatusController {
+public class TrendGraphController {
     public void exit(MouseEvent mouseEvent) {
         System.exit(0);
     }
 
-    public void trendGraphSceneSwap(MouseEvent mouseEvent) {
-        Main.trendGraphScene();
-    }
-
     public void tankSettingsSceneSwap(MouseEvent mouseEvent) {
         Main.tankSettingsScene();
+    }
+
+    public void tankStatusSceneSwap(MouseEvent mouseEvent) {
+        Main.tankStatusScene();
     }
 }

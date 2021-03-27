@@ -40,7 +40,7 @@
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="164.0" layoutX="515.0" layoutY="32.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1390.0" />
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="855.0" layoutX="515.0" layoutY="205.0" stroke="TRANSPARENT" strokeType="INSIDE" width="330.0" />
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="855.0" layoutX="865.0" layoutY="205.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1040.0" />
-        <Text layoutX="1025.0" layoutY="123.0" scaleX="5.0" scaleY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: oswald-bold;" text="DEFOAMER INJECTION STATUS SCREEN" />
+        <Text layoutX="1020.0" layoutY="123.0" scaleX="5.0" scaleY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: oswald-bold;" text="DEFOAMER INJECTION STATUS SCREEN" />
         <Text layoutX="1190.0" layoutY="265.0" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium; -fx-font-style: italic" text="Tank Level" />
         <Text layoutX="970.0" layoutY="325.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Number of gallons in tank:" />
         <Text layoutX="970.0" layoutY="440.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Daily injection rate setpoint" />
@@ -77,12 +77,12 @@
                 <Image url="@images/graph.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="82.0" fitWidth="74.0" layoutX="87.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="82.0" fitWidth="74.0" layoutX="87.0" layoutY="224.0" onMouseClicked="#tankSettingsSceneSwap" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@images/settings-icon-white-4.jpg" />
             </image>
         </ImageView>
-        <Text fill="WHITE" layoutX="273.0" layoutY="265.0" scaleX="3.5" scaleY="3.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-meidum;" text="Configuration" />
+        <Text fill="WHITE" layoutX="273.0" layoutY="265.0" onMouseClicked="#tankSettingsSceneSwap" scaleX="3.5" scaleY="3.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-meidum;" text="Configuration" />
         <Text fill="WHITE" layoutX="270.0" layoutY="371.0" scaleX="3.5" scaleY="3.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-meidum;" text="Status Screen" />
         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="20.0" layoutX="466.0" layoutY="360.0" stroke="#b0a5a500" strokeType="INSIDE" width="28.0" />
     </children>
