@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'avenir-next-bold';
+    src: url('avenir-next-bold-webfont.ttf');
+}
+
+.text {
+    -fx-font-family: "avenir-next-bold";
+}

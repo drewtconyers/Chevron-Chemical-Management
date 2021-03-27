@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'avenir-medium';
+    src: url('avenir-medium-webfont.ttf');
+}
+
+.text {
+    -fx-font-family: "avenir-medium";
+
+}

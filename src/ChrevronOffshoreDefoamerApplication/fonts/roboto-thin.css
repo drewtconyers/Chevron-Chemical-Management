@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'roboto-thin';
+    src: url('Roboto-Thin.ttf');
+}
+
+.text {
+    -fx-font-family: "roboto-thin";
+
+}

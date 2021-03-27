@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'avenir-next-italic';
+    src: url('avenir-next-italic-webfont.ttf');
+}
+
+.text {
+    -fx-font-family: "avenir-next-italic";
+
+}
