@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #f8f8f8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChrevronOffshoreDefoamerApplication.TankSettingsController">
+    <children>
+        <Rectangle fill="#0b61a9" height="15.0" stroke="TRANSPARENT" strokeType="INSIDE" width="960.0" />
+        <Rectangle fill="#d21931" height="15.0" layoutX="960.0" stroke="TRANSPARENT" strokeType="INSIDE" width="960.0" />
+        <Rectangle arcHeight="150.0" arcWidth="150.0" height="1060.0" layoutX="50.0" stroke="TRANSPARENT" strokeType="INSIDE" width="360.0">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.576190476190476">
+                    <stops>
+                        <Stop color="#0c62a8" />
+                        <Stop color="#d2ebff" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="1060.0" layoutX="344.0" stroke="TRANSPARENT" strokeType="INSIDE" width="148.0">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.576190476190476">
+                    <stops>
+                        <Stop color="#0c62a8" />
+                        <Stop color="#d2ebff" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+        <ImageView fitHeight="107.0" fitWidth="93.0" layoutX="84.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/Chevron_White_Logo2.png" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="164.0" layoutX="515.0" layoutY="32.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1390.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="855.0" layoutX="515.0" layoutY="205.0" stroke="TRANSPARENT" strokeType="INSIDE" width="330.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="855.0" layoutX="865.0" layoutY="205.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1040.0" />
+        <Text layoutX="1030.0" layoutY="122.0" scaleX="5.0" scaleY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: oswald-bold;" text="DEFOAMER INJECTION CONFIGURATION" />
+        <Text layoutX="1190.0" layoutY="265.0" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium; -fx-font-style: italic" text="Azure AD Group Notification Settings" />
+        <Text layoutX="970.0" layoutY="325.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Number of gallons in tank:" />
+        <TextField layoutX="1010.0" layoutY="360.0" prefHeight="26.0" prefWidth="235.0" promptText="(required gallon input)" scaleX="2.0" scaleY="2.0" />
+        <Text layoutX="970.0" layoutY="440.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Daily injection rate setpoint" />
+        <TextField layoutX="1010.0" layoutY="475.0" prefHeight="26.0" prefWidth="235.0" promptText="(required gallon injection rate input)" scaleX="2.0" scaleY="2.0" />
+        <Text layoutX="1140.0" layoutY="590.0" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium; -fx-font-style: italic" text="Tank Notification Configuration" />
+        <Text layoutX="965.0" layoutY="645.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Number of gallons in tank:" />
+        <TextField layoutX="1010.0" layoutY="685.0" prefHeight="26.0" prefWidth="235.0" promptText="(day input)" scaleX="2.0" scaleY="2.0" />
+        <Text layoutX="1143.0" layoutY="763.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="How many gallon remaining would you like to be notified before the tank is empty:" wrappingWidth="504.4178771972656" />
+        <TextField layoutX="1010.0" layoutY="810.0" prefHeight="26.0" prefWidth="235.0" promptText="(gallon input)" scaleX="2.0" scaleY="2.0" />
+        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d21931" height="82.0" layoutX="894.0" layoutY="907.0" stroke="TRANSPARENT" strokeType="INSIDE" width="330.0" />
+        <Text fill="WHITE" layoutX="1015.0" layoutY="950.0" scaleX="3.0" scaleY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Apply Changes" />
+        <Text fill="WHITE" layoutX="241.0" layoutY="970.0" onMouseClicked="#exit" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Exit" />
+        <ImageView fitHeight="87.0" fitWidth="74.0" layoutX="116.0" layoutY="933.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/power-3-128.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="66.0" fitWidth="66.0" layoutX="520.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/black_tank.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="660.0" layoutY="265.0" scaleX="2.5" scaleY="2.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Tank Settings" />
+        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="773.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/right-arrow-1438234-1216195.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="65.0" fitWidth="56.0" layoutX="531.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/black_notification_bell.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="651.0" layoutY="375.0" scaleX="2.5" scaleY="2.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Notifications" />
+        <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="87.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/graph.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="74.0" layoutX="87.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/settings-icon-white-4.jpg" />
+            </image>
+        </ImageView>
+        <Text fill="WHITE" layoutX="273.0" layoutY="265.0" scaleX="3.5" scaleY="3.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-meidum;" text="Configuration" />
+        <Text fill="WHITE" layoutX="270.0" layoutY="371.0" scaleX="3.5" scaleY="3.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-meidum;" text="Status Screen" />
+        <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="20.0" layoutX="466.0" layoutY="250.0" stroke="#b0a5a500" strokeType="INSIDE" width="28.0" />
+    </children>
+</AnchorPane>

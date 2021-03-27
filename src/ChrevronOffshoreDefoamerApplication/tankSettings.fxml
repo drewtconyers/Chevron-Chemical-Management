@@ -55,7 +55,7 @@
       <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d21931" height="82.0" layoutX="894.0" layoutY="907.0" stroke="TRANSPARENT" strokeType="INSIDE" width="330.0" />
       <Text fill="WHITE" layoutX="1015.0" layoutY="950.0" scaleX="3.0" scaleY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Apply Changes" />
       <Text fill="WHITE" layoutX="241.0" layoutY="970.0" onMouseClicked="#exit" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Exit" />
-      <ImageView fitHeight="87.0" fitWidth="74.0" layoutX="116.0" layoutY="933.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="87.0" fitWidth="74.0" layoutX="116.0" layoutY="933.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/power-3-128.png" />
          </image>
@@ -71,21 +71,24 @@
             <Image url="@images/right-arrow-1438234-1216195.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="65.0" fitWidth="56.0" layoutX="531.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="65.0" fitWidth="56.0" layoutX="531.0" layoutY="339.0" onMouseClicked="#notificationScreenSwitch" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/black_notification_bell.png" />
          </image>
       </ImageView>
-      <Text layoutX="651.0" layoutY="375.0" scaleX="2.5" scaleY="2.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Notifications" />
-      <ImageView fitHeight="96.0" fitWidth="93.0" layoutX="79.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+      <Text layoutX="651.0" layoutY="375.0" onMouseClicked="#notificationScreenSwitch" scaleX="2.5" scaleY="2.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Notifications" />
+      <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="87.0" layoutY="325.0" onMouseClicked="#tankStatusSwitchScreen" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/graph.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="53.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="82.0" fitWidth="74.0" layoutX="87.0" layoutY="224.0" onMouseClicked="#tankStatusSwitchScreen" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/settings-icon-white-4%20(1).jpg" />
+            <Image url="@images/settings-icon-white-4.jpg" />
          </image>
       </ImageView>
+      <Text fill="WHITE" layoutX="273.0" layoutY="265.0" onMouseClicked="#tankStatusSwitchScreen" scaleX="3.5" scaleY="3.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-meidum;" text="Configuration" />
+      <Text fill="WHITE" layoutX="270.0" layoutY="371.0" onMouseClicked="#tankStatusSwitchScreen" scaleX="3.5" scaleY="3.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-meidum;" text="Status Screen" />
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="20.0" layoutX="466.0" layoutY="250.0" stroke="#b0a5a500" strokeType="INSIDE" width="28.0" />
    </children>
 </AnchorPane>
