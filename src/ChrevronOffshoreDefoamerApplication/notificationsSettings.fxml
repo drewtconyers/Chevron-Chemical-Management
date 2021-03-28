@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -43,15 +44,7 @@
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="855.0" layoutX="865.0" layoutY="205.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1040.0" />
         <Text layoutX="1030.0" layoutY="122.0" scaleX="5.0" scaleY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: oswald-bold;" text="DEFOAMER INJECTION CONFIGURATION" />
         <Text layoutX="1190.0" layoutY="265.0" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium; -fx-font-style: italic" text="Azure AD Group Notification Settings" />
-        <Text layoutX="970.0" layoutY="325.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Number of gallons in tank:" />
-        <TextField layoutX="1010.0" layoutY="360.0" prefHeight="26.0" prefWidth="235.0" promptText="(required gallon input)" scaleX="2.0" scaleY="2.0" />
-        <Text layoutX="970.0" layoutY="440.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Daily injection rate setpoint" />
-        <TextField layoutX="1010.0" layoutY="475.0" prefHeight="26.0" prefWidth="235.0" promptText="(required gallon injection rate input)" scaleX="2.0" scaleY="2.0" />
-        <Text layoutX="1140.0" layoutY="590.0" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium; -fx-font-style: italic" text="Tank Notification Configuration" />
-        <Text layoutX="965.0" layoutY="645.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Number of gallons in tank:" />
-        <TextField layoutX="1010.0" layoutY="685.0" prefHeight="26.0" prefWidth="235.0" promptText="(day input)" scaleX="2.0" scaleY="2.0" />
-        <Text layoutX="1143.0" layoutY="763.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="How many gallon remaining would you like to be notified before the tank is empty:" wrappingWidth="504.4178771972656" />
-        <TextField layoutX="1010.0" layoutY="810.0" prefHeight="26.0" prefWidth="235.0" promptText="(gallon input)" scaleX="2.0" scaleY="2.0" />
+        <Text layoutX="1100.0" layoutY="325.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Group for if tank has less than input gallons and or input days of chemical left:" />
         <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d21931" height="82.0" layoutX="894.0" layoutY="907.0" stroke="TRANSPARENT" strokeType="INSIDE" width="330.0" />
         <Text fill="WHITE" layoutX="1015.0" layoutY="950.0" scaleX="3.0" scaleY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Apply Changes" />
         <Text fill="WHITE" layoutX="241.0" layoutY="970.0" onMouseClicked="#exit" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Exit" />
@@ -90,5 +83,19 @@
         <Text fill="WHITE" layoutX="273.0" layoutY="265.0" scaleX="3.5" scaleY="3.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-meidum;" text="Configuration" />
         <Text fill="WHITE" layoutX="270.0" layoutY="371.0" onMouseClicked="#tankStatusSceneSwap" scaleX="3.5" scaleY="3.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-meidum;" text="Status Screen" />
         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="20.0" layoutX="466.0" layoutY="250.0" stroke="#b0a5a500" strokeType="INSIDE" width="28.0" />
+      <ComboBox layoutX="1065.0" layoutY="355.0" prefHeight="28.0" prefWidth="450.0" scaleX="1.5" scaleY="1.5" />
+      <CheckBox layoutX="910.0" layoutY="360.0" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" />
+      <Text layoutX="1080.0" layoutY="430.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Group for if actual rate of injection is less than or greater than setpoint:" />
+      <CheckBox layoutX="910.0" layoutY="465.0" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" />
+      <ComboBox layoutX="1065.0" layoutY="460.0" prefHeight="28.0" prefWidth="450.0" scaleX="1.5" scaleY="1.5" />
+      <Text layoutX="1065.0" layoutY="540.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Group for if rate of injection is less than or greater than setpoint:" />
+      <CheckBox layoutX="910.0" layoutY="570.0" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" />
+      <ComboBox layoutX="1065.0" layoutY="570.0" prefHeight="28.0" prefWidth="450.0" scaleX="1.5" scaleY="1.5" />
+      <Text layoutX="1040.0" layoutY="655.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Group for blockchain notification for chemical delivery:" />
+      <CheckBox layoutX="910.0" layoutY="685.0" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" />
+      <ComboBox layoutX="1065.0" layoutY="685.0" prefHeight="28.0" prefWidth="450.0" scaleX="1.5" scaleY="1.5" />
+      <Text layoutX="1005.0" layoutY="760.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Group for supply chain payment approval:" />
+      <CheckBox layoutX="910.0" layoutY="790.0" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" />
+      <ComboBox layoutX="1065.0" layoutY="790.0" prefHeight="28.0" prefWidth="450.0" scaleX="1.5" scaleY="1.5" />
     </children>
 </AnchorPane>

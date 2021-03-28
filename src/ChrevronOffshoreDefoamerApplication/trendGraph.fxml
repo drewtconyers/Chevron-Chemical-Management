@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -41,14 +43,8 @@
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="855.0" layoutX="515.0" layoutY="205.0" stroke="TRANSPARENT" strokeType="INSIDE" width="330.0" />
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="855.0" layoutX="865.0" layoutY="205.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1040.0" />
         <Text layoutX="1020.0" layoutY="123.0" scaleX="5.0" scaleY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: oswald-bold;" text="DEFOAMER INJECTION STATUS SCREEN" />
-        <Text layoutX="1190.0" layoutY="265.0" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium; -fx-font-style: italic" text="Tank Level" />
-        <Text layoutX="970.0" layoutY="325.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Number of gallons in tank:" />
-        <Text layoutX="970.0" layoutY="440.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Daily injection rate setpoint" />
-        <Text layoutX="1140.0" layoutY="590.0" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium; -fx-font-style: italic" text="Tank Notification Configuration" />
-        <Text layoutX="965.0" layoutY="645.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Number of gallons in tank:" />
-        <Text layoutX="1143.0" layoutY="763.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="How many gallon remaining would you like to be notified before the tank is empty:" wrappingWidth="504.4178771972656" />
-        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d21931" height="82.0" layoutX="894.0" layoutY="907.0" stroke="TRANSPARENT" strokeType="INSIDE" width="330.0" />
-        <Text fill="WHITE" layoutX="1015.0" layoutY="950.0" scaleX="3.0" scaleY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Apply Changes" />
+        <Text layoutX="1215.0" layoutY="265.0" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium; -fx-font-style: italic" text="Trend of Daily Usage - Chemical Injection" />
+        <Text layoutX="992.0" layoutY="324.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Inch breakdown fo liquid level in tank" />
         <Text fill="WHITE" layoutX="241.0" layoutY="970.0" onMouseClicked="#exit" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Exit" />
         <ImageView fitHeight="87.0" fitWidth="74.0" layoutX="116.0" layoutY="933.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -85,5 +81,93 @@
         <Text fill="WHITE" layoutX="273.0" layoutY="265.0" onMouseClicked="#tankSettingsSceneSwap" scaleX="3.5" scaleY="3.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-meidum;" text="Configuration" />
         <Text fill="WHITE" layoutX="270.0" layoutY="371.0" scaleX="3.5" scaleY="3.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-meidum;" text="Status Screen" />
         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="20.0" layoutX="466.0" layoutY="360.0" stroke="#b0a5a500" strokeType="INSIDE" width="28.0" />
+      <TabPane layoutX="1095.0" layoutY="479.0" prefHeight="462.0" prefWidth="570.0" scaleX="1.5" scaleY="1.5" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Calcuated">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="-2.0" layoutY="-2.0" prefHeight="405.0" prefWidth="572.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Today">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                            <Tab text="1D">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                              <Tab text="1W">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                              <Tab text="3W">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                              <Tab text="1M">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                              <Tab text="3M">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Actual">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutY="-3.0" prefHeight="405.0" prefWidth="572.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="Today">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="1D">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="1W">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="3W">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="1M">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="3M">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
     </children>
 </AnchorPane>

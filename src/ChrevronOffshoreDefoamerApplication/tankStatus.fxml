@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
@@ -41,14 +44,10 @@
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="855.0" layoutX="515.0" layoutY="205.0" stroke="TRANSPARENT" strokeType="INSIDE" width="330.0" />
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="855.0" layoutX="865.0" layoutY="205.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1040.0" />
         <Text layoutX="1020.0" layoutY="123.0" scaleX="5.0" scaleY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: oswald-bold;" text="DEFOAMER INJECTION STATUS SCREEN" />
-        <Text layoutX="1190.0" layoutY="265.0" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium; -fx-font-style: italic" text="Tank Level" />
-        <Text layoutX="970.0" layoutY="325.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Number of gallons in tank:" />
-        <Text layoutX="970.0" layoutY="440.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Daily injection rate setpoint" />
-        <Text layoutX="1140.0" layoutY="590.0" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium; -fx-font-style: italic" text="Tank Notification Configuration" />
-        <Text layoutX="965.0" layoutY="645.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Number of gallons in tank:" />
-        <Text layoutX="1143.0" layoutY="763.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="How many gallon remaining would you like to be notified before the tank is empty:" wrappingWidth="504.4178771972656" />
-        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d21931" height="82.0" layoutX="894.0" layoutY="907.0" stroke="TRANSPARENT" strokeType="INSIDE" width="330.0" />
-        <Text fill="WHITE" layoutX="1015.0" layoutY="950.0" scaleX="3.0" scaleY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Apply Changes" />
+        <Text layoutX="980.0" layoutY="265.0" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium; -fx-font-style: italic" text="Tank Level" />
+        <Text layoutX="1000.0" layoutY="325.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Inch breakdown of liquid level in tank" />
+        <Text layoutX="1537.0" layoutY="265.0" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium; -fx-font-style: italic" text="Days Until Empty" />
+        <Text layoutX="1408.0" layoutY="325.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="XXX" />
         <Text fill="WHITE" layoutX="241.0" layoutY="970.0" onMouseClicked="#exit" scaleX="4.0" scaleY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Exit" />
         <ImageView fitHeight="87.0" fitWidth="74.0" layoutX="116.0" layoutY="933.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -85,5 +84,22 @@
         <Text fill="WHITE" layoutX="273.0" layoutY="265.0" onMouseClicked="#tankSettingsSceneSwap" scaleX="3.5" scaleY="3.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-meidum;" text="Configuration" />
         <Text fill="WHITE" layoutX="270.0" layoutY="371.0" scaleX="3.5" scaleY="3.5" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-meidum;" text="Status Screen" />
         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="20.0" layoutX="466.0" layoutY="360.0" stroke="#b0a5a500" strokeType="INSIDE" width="28.0" />
+      <PieChart fx:id="tankLevelChart" layoutX="894.0" layoutY="303.0" legendVisible="false" />
+        <Text layoutX="940.0" layoutY="675.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="ITEM" />
+      <Circle fill="#5a80fb" layoutX="925.0" layoutY="715.0" radius="7.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Text fill="#868686" layoutX="990.0" layoutY="720.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Defoamer" />
+      <Text layoutX="1275.0" layoutY="675.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="INCHES" />
+      <Line endX="200.3731689453125" layoutX="1130.0" layoutY="756.0" startX="-205.6268310546875" stroke="#868686" />
+      <Text fx:id="defoamerInches" fill="#868686" layoutX="1300.0" layoutY="720.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="XX" />
+      <Text fill="#868686" layoutX="1005.0" layoutY="800.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Miscellaneous" />
+      <Text fx:id="miscellaneousInches" fill="#868686" layoutX="1300.0" layoutY="800.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="XX" />
+      <Circle fill="#beceff" layoutX="925.0" layoutY="795.0" radius="7.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Line endX="200.3731689453125" layoutX="1130.0" layoutY="836.0" startX="-205.6268310546875" stroke="#868686" />
+      <Text fill="#868686" layoutX="1000.0" layoutY="880.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="Remaining" />
+      <Text fx:id="miscellaneousInches1" fill="#868686" layoutX="1300.0" layoutY="880.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="XX" />
+      <Circle fill="#edf1fe" layoutX="925.0" layoutY="875.0" radius="7.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Text layoutX="1550.0" layoutY="325.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="days until defoamer tank empty" />
+      <Text layoutX="1408.0" layoutY="383.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="XXX" />
+      <Text layoutX="1500.0" layoutY="383.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: avenir-medium;" text="\% remaining" />
     </children>
 </AnchorPane>
